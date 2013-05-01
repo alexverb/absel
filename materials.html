@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Absel.ru</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+  <!-- Подключаем плагин слайдера -->
+  <script src="js/jquery-1.6.1.js"></script>
+  <script src="js/slides.js"></script>
+  <script>
+	  $(function(){
+	    $("#head_slider").slides({
+	      width: 446,
+	      height: 117,
+        fadeSpeed: 800,
+        play: 5000,
+        pause: 2500,
+        pagination: false    
+	    });
+	    $("#content_slider").slides({
+	      width: 650,
+	      height: 160,
+        fadeSpeed: 800,
+        play: 5000,
+        pause: 2500,
+        pagination: false    
+	    });
+	  });
+	</script>
+  
+  <!-- Подключаем плагин выпадающего меню -->
+  <link href="css/cusel.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/cusel.js"></script>
+  <script type="text/javascript" src="js/jScrollPane.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>  
+  <script type="text/javascript"> 
+    jQuery(document).ready(function(){    
+      var params = {
+      		changedEl: ".sort select",
+      		visRows: 5,
+      		scrollArrows: true
+      	}    
+      	cuSel(params);    
+    });
+  </script> 
+  <!--[if IE 6]>
+  <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+  <script type="text/javascript">
+  DD_belatedPNG.fix('.cuselFrameRight');
+  jQuery(document).ready(function(){
+  jQuery(".cusel").each(
+  function(){
+  	var w = parseInt(jQuery(this).width()),
+  		scrollPanel = jQuery(this).find(".cusel-scroll-pane");
+  	if(w>=scrollPanel.width())
+  	{
+  		jQuery(this).find(".jScrollPaneContainer").width(w);
+  		scrollPanel.width(w);
+  	}
+  });
+  jQuery(".cusel-scroll-pane span").hover(
+  function()
+  {
+  	$(this).addClass("cuselOptHover");
+  	return;
+  },
+  function()
+  {
+  	$(this).removeClass("cuselOptHover");
+  	return;
+  });
+  
+  });
+  </script>
+  <![endif]-->  
+</head>
+<body>
+
+<header>
+  
+  <section class="wrap">
+  
+    <section id="logo" class="left">
+      <span class="title">Absel.ru</span>
+      <span class="slogan">Абсолют Электро</span>
+    </section>
+    
+    <section class="support left">    
+      <span>Техподдержка</span>
+      <span class="phone">8-800-2000-699</span>
+      <a href="mailto:info@absel.ru">info@absel.ru</a>
+    </section>
+    
+    <section id="head_slider" class="right">
+      <img src="img/pic1.jpg" alt="Slide 1" />
+  		<img src="img/pic2.jpg" alt="Slide 1" />
+      <img src="img/pic1.jpg" alt="Slide 1" />
+      <img src="img/pic2.jpg" alt="Slide 1" />
+      <img src="img/pic1.jpg" alt="Slide 1" />
+      <img src="img/pic2.jpg" alt="Slide 1" />
+      <img src="img/pic1.jpg" alt="Slide 1" />  
+    </section>
+  
+  </section>
+
+</header>
+
+<section id="mainmenu" class="wrap">
+  
+  <section id="mm_lvl_one" class="left">
+    <ul>
+      <li class="active"><a href="/">Продукция</a></li>
+      <li><a href="/">О нас</a></li>
+      <li><a href="/">Прайс-лист</a></li>
+      <li><a href="/">Проекты</a></li>
+      <li><a href="/">Контакты</a></li>
+    </ul>
+  </section>
+  
+  <section id="searchbar" class="right">
+    <input type="text" value="Поиск по сайту..." onblur="if(this.value=='') this.value='Поиск по сайту...';" onfocus="if(this.value=='Поиск по сайту...') this.value='';" />
+    <input type="image" src="img/spacer.gif" />  
+  </section>
+  
+  <section id="mm_lvl_two" class="clearfix">
+    <section class="left"></section>
+    <ul class="left">
+      <li><a href="/">Светодиодная лента</a></li>
+      <li><a href="/">Офисные светодиодные светильники</a></li>
+      <li><a href="/">Светодиодные прожекторы</a></li>
+      <li><a href="/">Светодиодные светильники для ЖКХ</a></li>
+    </ul>
+    <section class="right"></section>
+  </section>  
+
+</section>
+
+<section class="wrap">
+
+  <aside class="left">
+    <section id="aside_top"></section>
+    <section id="aside_cnt">
+    
+      <section class="side_bl"> <!-- Блок "Меню" -->
+        <section class="heading">
+          <span>Меню</span>
+        </section>
+        <section class="side_bl_nav">
+          <ul>
+            <li><i></i><a href="/">Светодиодная лента</a></li>
+            <li><i></i><a href="/">Офисные светодиодные светильники</a></li>
+            <li><i></i><a href="/">Светодиодные прожекторы</a></li>
+            <li><i></i><a href="/">Светодиодные светильники для ЖКХ</a></li>
+            <li><i></i><a href="/">Уличные светодиодные светильники</a></li>
+            <li><i></i><a href="/">Светодиодные лампы</a></li>
+            <li><i></i><a href="/">Датчики движения</a></li>
+          </ul>
+        </section>
+      </section>
+      
+      <section class="side_bl">
+        <section class="heading">
+          <span>Новости</span>
+        </section>
+        <section class="side_bl_news">
+          <section class="side_bl_news_item">
+            <a href="/">Внимание! Выгодные условия для оптовых покупателей!</a>
+            <span class="item_date"><i></i>23.03.13</span>
+            <p>
+              Наш интернет-магазин всегда предлагал нашим клиентам светодиодную продукцию по самым низким ценам и сейчас для оптовых покупателей  мы предоставляем еще более выгодные условия сотрудничества: "Найдёте цены ниже - мы сделаем 2% скидку от той цены, которую нашли Вы!". 
+            </p>
+          </section>
+          <section class="side_bl_news_item">
+            <a href="/">Внимание! Выгодные условия для оптовых покупателей!</a>
+            <span class="item_date"><i></i>23.03.13</span>
+            <p>
+              Наш интернет-магазин всегда предлагал нашим клиентам светодиодную продукцию по самым низким ценам и сейчас для оптовых покупателей  мы предоставляем еще более выгодные условия сотрудничества: "Найдёте цены ниже - мы сделаем 2% скидку от той цены, которую нашли Вы!". 
+            </p>
+          </section>
+          <section class="side_bl_news_item">
+            <a href="/">Внимание! Выгодные условия для оптовых покупателей!</a>
+            <span class="item_date"><i></i>23.03.13</span>
+            <p>
+              Наш интернет-магазин всегда предлагал нашим клиентам светодиодную продукцию по самым низким ценам и сейчас для оптовых покупателей  мы предоставляем еще более выгодные условия сотрудничества: "Найдёте цены ниже - мы сделаем 2% скидку от той цены, которую нашли Вы!". 
+            </p>
+          </section>
+          <section class="side_bl_news_item">
+            <a href="/">Внимание! Выгодные условия для оптовых покупателей!</a>
+            <span class="item_date"><i></i>23.03.13</span>
+            <p>
+              Наш интернет-магазин всегда предлагал нашим клиентам светодиодную продукцию по самым низким ценам и сейчас для оптовых покупателей  мы предоставляем еще более выгодные условия сотрудничества: "Найдёте цены ниже - мы сделаем 2% скидку от той цены, которую нашли Вы!". 
+            </p>
+          </section>
+          <section class="side_bl_news_item">
+            <a href="/">Внимание! Выгодные условия для оптовых покупателей!</a>
+            <span class="item_date"><i></i>23.03.13</span>
+            <p>
+              Наш интернет-магазин всегда предлагал нашим клиентам светодиодную продукцию по самым низким ценам и сейчас для оптовых покупателей  мы предоставляем еще более выгодные условия сотрудничества: "Найдёте цены ниже - мы сделаем 2% скидку от той цены, которую нашли Вы!". 
+            </p>
+          </section>           
+        </section>
+      </section>
+      
+    </section>  
+    <section id="aside_btm"></section>
+  </aside>
+  
+  <section id="container" class="right">
+    <section id="speedbar">
+      <i></i> <a href="/">Absel.ru</a> &raquo; <a href="/">Главная страница</a> &raquo; <span>Страница товара</span>
+    </section> 
+    <section id="content"> 
+      <section id="content_top"></section>
+      
+      <section id="content_cnt">
+      
+        <section class="heading">
+          <span>Светодиодные прожекторы</span> <!-- Материалы -->
+        </section>
+                                                                                            
+        <p>Для создания эффектного наружного освещения удобно использовать светодиодные прожекторы с различными уровнями яркости излучаемого света. Свою долю популярности светодиодные прожекторы получили за счёт своей экономичности и энергосберегающих качеств. Чаще всего светодиодный прожекторпринято использовать для того, чтобы осветить внутренние дворы, подъезды и подъездные дорожки. Также достаточно удобен светодиодный прожектор для освещения фасадов зданий и рекламных щитов. По сравнению со стандартным осветительным оборудованием светодиодные прожекторы обходятся на 80% выгоднее.</p>
+        
+        <section class="sort">
+        
+          <section class="sort_item">
+          
+            <div>
+		          <label>Тип:</label>	
+            	<select id="type" name="type" tabindex="1">
+              	<option value="">Кассетные</option>
+              	<option value="2">Другие</option>
+              	<option value="3">Кассетные</option>
+              	<option value="4">Другие</option>
+            	</select>
+	           </div>
+          
+          </section>
+          
+          <section class="sort_item">
+          
+            <div>
+		          <label>Цена:</label>	
+            	<select id="cost" name="cost" tabindex="1">
+              	<option value="">от 1000 до 5000</option>
+              	<option value="2">от 1000 до 5000</option>
+              	<option value="3">от 1000 до 5000</option>
+              	<option value="4">от 1000 до 5000</option>
+            	</select>
+	           </div>
+          
+          </section>
+        
+        </section>
+        
+        <section class="nav_page right">
+          <span>Страницы:</span>
+          <a href="/">1</a>
+          <span>2</span>
+          <span class="active">3</span>
+        </section>
+        
+        <section class="clearfix"></section>
+        
+        <section id="shortstory">
+        
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>        
+  
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="shortstory_item">
+            <section class="shortstory_item_pic">
+              <img src="img/pic2.jpg" alt="" />
+            </section>
+            <a href="/">Прожектор многоцветный 1LED*30W-RGB (IP44), LL-182</a>
+            <ul>
+              <li><span>Материал корпуса:</span> металл</li>
+              <li><span>Количество светодиодов:</span> 1LED COB</li>
+              <li><span>Мощность:</span> 30W</li>
+            </ul>                       
+            <section class="fs_info_price">
+              <span>2450 руб.</span>
+              <a href="/">Купить</a>
+            </section>
+          </section>
+          
+          <section class="clearfix"></section>
+        
+        </section>
+        
+      </section>
+      
+      <section id="content_btm"></section>   
+                     
+  </section>
+  
+  </section>
+  
+  <section class="clearfix"></section>
+  
+</section>
+
+<footer>
+
+  <section class="wrap">
+
+    <section class="copyright left">
+      <span>&copy; 2004—2013 «Абсолют Электро»</span>
+      <p>
+        620026, г.Екатеринбург, 
+        ул. Тверитина, д.34, 9я секция
+      </p>  
+    </section>
+
+    <section class="support left">    
+      <span>Техподдержка</span>
+      <span class="phone">8-800-2000-699</span>
+      <a href="mailto:info@absel.ru">info@absel.ru</a>
+    </section>
+    
+    <section id="stats" class="right">
+      <div class="test">
+        <span>88x31</span>
+      </div>
+      <div class="test">
+        <span>88x31</span>
+      </div>
+      <div class="test">
+        <span>88x31</span>
+      </div>
+    </section>  
+
+  </section>
+
+</footer>
+
+</body>
+</html>
